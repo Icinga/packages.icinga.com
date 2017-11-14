@@ -1,0 +1,30 @@
+<div id="readme">
+<h1><a href="http://www.fedoraproject.org"><img src="../res/fedora-logo.png" alt="Fedora"></a></h1>
+<h2>Release Builds</h2>
+
+Fedora 26:
+<p style="font-size: 0.8em;"><code>
+dnf install https://packages.icinga.com/fedora/icinga-rpm-release-26-latest.noarch.rpm
+</code></p>
+</p>
+
+Fedora 25:
+<p style="font-size: 0.8em;"><code>
+dnf install https://packages.icinga.com/fedora/icinga-rpm-release-25-latest.noarch.rpm
+</code></p>
+</p>
+
+<h2>Snapshot Builds</h2>
+
+<p style="font-weight: bold; color: red;">
+WARNING: These are auto-built packages, based on current development trees.<br/>
+Made only for testing purposes, you should not use them in production environments!
+</p>
+
+<p style="font-size: 0.8em;"><code>
+rpm --import https://packages.icinga.com/icinga.key<br/>
+wget http://packages.icinga.com/fedora/ICINGA-snapshot.repo -O /etc/yum.repos.d/ICINGA-snapshot.repo<br/>
+yum makecache
+</code></p>
+</p>
+</div>

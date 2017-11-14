@@ -1,0 +1,6 @@
+## EDITORS
+*~
+.*.sw[op]
+
+## Non-included
+/graphite/

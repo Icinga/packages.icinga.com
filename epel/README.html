@@ -1,0 +1,28 @@
+<div id="readme">
+<h1><a href="http://fedoraproject.org/wiki/EPEL"><img src="../res/epel-logo.png" alt="EPEL"></a> for CentOS / RHEL / OEL</h1>
+<h2>Release Builds</h2>
+
+RHEL/CentOS 7:
+<p style="font-size: 0.8em;"><code>
+yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm
+</code></p>
+
+RHEL/CentOS 6:
+<p style="font-size: 0.8em;"><code>
+yum install https://packages.icinga.com/epel/icinga-rpm-release-6-latest.noarch.rpm
+</code></p>
+
+<h2>Snapshot Builds</h2>
+
+<p style="font-weight: bold; color: red;">
+WARNING: These are auto-built packages, based on current development trees.<br/>
+Made only for testing purposes, you should not use them in production environments!
+</p>
+
+<p style="font-size: 0.8em;"><code>
+rpm --import http://packages.icinga.com/icinga.key<br/>
+wget http://packages.icinga.com/epel/ICINGA-snapshot.repo -O /etc/yum.repos.d/ICINGA-snapshot.repo<br/>
+yum makecache
+</code></p>
+</p>
+</div>
