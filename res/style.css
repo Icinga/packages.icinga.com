@@ -1,7 +1,12 @@
 BODY {
   font-family: 'Open Sans', sans-serif;
   color: #666;
+
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1255px;
 }
+
 CODE {
   font-size: 1.2em;
 }
@@ -12,9 +17,7 @@ h1 {
 }
 
 TABLE#indexlist, DIV#header, DIV#readme {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1255px;
+  width: 100%;
 }
 
 A {
