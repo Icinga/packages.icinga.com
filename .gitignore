@@ -4,12 +4,9 @@
 
 ## Non-included
 /graphite/
-<<<<<<< HEAD
 /*/*/
 /windows
-=======
 
 ## Temporary files
 *.tmp.html
 *.tmp.md
->>>>>>> 859d753... WIP: Prepare support matrix
