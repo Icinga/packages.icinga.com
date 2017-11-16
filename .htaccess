@@ -1,5 +1,5 @@
 Options +Indexes
-IndexStyleSheet "/res/style.css"
+IndexStyleSheet "/res/style.css?20171116"
 
 # yes some hidden content :D
 IndexIgnore HEADER.html README.html style.css res favicon.ico sles_dvds stack graphite Makefile
