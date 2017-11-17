@@ -1,28 +1,51 @@
-<div id="readme">
-<h1><a href="http://fedoraproject.org/wiki/EPEL"><img src="../res/epel-logo.png" alt="EPEL"></a> for CentOS / RHEL / OEL</h1>
+<!--<link rel="stylesheet" href="../res/style.css"/>-->
+<h1><a href="https://fedoraproject.org/wiki/EPEL"><img src="../res/epel-logo.png" alt="EPEL"></a> Extra Packages for Enterprise Linux</h1>
+<p>Target platforms:</p>
+<ul>
+<li>RedHat Enterprise Linux (RHEL)</li>
+<li>CentOS</li>
+<li>Oracle Enterprise Linux (OEL)</li>
+</ul>
+
+<h2>Requirements</h2>
+<p>We require some dependencies from the EPEL repository itself, so make sure to enable it.</p>
+
+<h3>CentOS 6 / 7</h3>
+<code>yum install epel-release</code>
+
+<p>Icinga Web 2 will also require PHP via the SCL repository system:</p>
+<code>yum install yum install centos-release-scl</code>
+
+<h3>RedHat 6 / 7 and compatible</h3>
+<pre>yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+
+# or for RedHat 6
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</pre>
+
+<p>Icinga Web 2 will also require PHP via the SCL repository system:</p>
+<pre>subscription-manager repos --enable rhel-7-server-optional-rpms
+subscription-manager repos --enable rhel-server-rhscl-7-rpms
+
+# or for RedHat 6
+subscription-manager repos --enable rhel-6-server-optional-rpms
+subscription-manager repos --enable rhel-server-rhscl-6-rpms</pre>
+
 <h2>Release Builds</h2>
 
-RHEL/CentOS 7:
-<p style="font-size: 0.8em;"><code>
-yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm
-</code></p>
+<pre>rpm --import https://packages.icinga.com/icinga.key
 
-RHEL/CentOS 6:
-<p style="font-size: 0.8em;"><code>
-yum install https://packages.icinga.com/epel/icinga-rpm-release-6-latest.noarch.rpm
-</code></p>
+yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm
+
+# or for RedHat 6
+yum install https://packages.icinga.com/epel/icinga-rpm-release-6-latest.noarch.rpm</pre>
 
 <h2>Snapshot Builds</h2>
 
-<p style="font-weight: bold; color: red;">
+<p class="warning">
 WARNING: These are auto-built packages, based on current development trees.<br/>
 Made only for testing purposes, you should not use them in production environments!
 </p>
 
-<p style="font-size: 0.8em;"><code>
-rpm --import http://packages.icinga.com/icinga.key<br/>
-wget http://packages.icinga.com/epel/ICINGA-snapshot.repo -O /etc/yum.repos.d/ICINGA-snapshot.repo<br/>
-yum makecache
-</code></p>
-</p>
-</div>
+<pre>rpm --import https://packages.icinga.com/icinga.key
+
+wget https://packages.icinga.com/epel/ICINGA-snapshot.repo -O /etc/yum.repos.d/ICINGA-snapshot.repo</pre>
