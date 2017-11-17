@@ -1,7 +1,7 @@
-1. [Documentation](#documentation)
-1. [Linux Support](#linux-support)
-1. [Windows Support](#windows-support)
-1. [Contributing](#contributing)
+1. [Documentation](#user-content-documentation)
+1. [Linux Support](#user-content-linux-support)
+1. [Windows Support](#user-content-windows-support)
+1. [Contributing](#user-content-contributing)
 
 ## Documentation
 
