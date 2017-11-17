@@ -50,6 +50,25 @@ TABLE#indexlist .indexcolicon {
   width: 20px ! important;
 }
 
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
 ADDRESS {
   margin: 0 auto;
   width: 66%;
