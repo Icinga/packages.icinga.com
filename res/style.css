@@ -7,8 +7,9 @@ BODY {
   max-width: 1255px;
 }
 
-CODE {
-  font-size: 1.2em;
+CODE, PRE {
+  font-size: 0.9em;
+  display: block;
 }
 
 h1 {
@@ -53,4 +54,9 @@ ADDRESS {
   margin: 0 auto;
   width: 66%;
   text-align: center;
+}
+
+.warning {
+  color: orange;
+  font-weight: bold;
 }
