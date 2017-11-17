@@ -1,28 +1,22 @@
-<div id="readme">
-<h1><a href="http://www.opensuse.org"><img src="../res/openSUSE-logo.png"></a> openSUSE</h1>
+<h1><a href="https://www.opensuse.org"><img src="../res/openSUSE-logo.png"></a> openSUSE</h1>
 <h2>Archive Key</h2>
-<p style="font-size: 0.8em;"><code>
-rpm --import http://packages.icinga.com/icinga.key</code></p>
-</p>
+<pre>rpm --import https://packages.icinga.com/icinga.key</pre>
 
 <h2>Release Builds</h2>
 
-<p style="font-size: 0.8em;"><code>
-zypper ar http://packages.icinga.com/openSUSE/ICINGA-release.repo<br/>
+<pre>
+zypper ar https://packages.icinga.com/openSUSE/ICINGA-release.repo
 zypper ref
-</code></p>
-</p>
+</pre>
 
 <h2>Snapshot Builds</h2>
 
-<p style="font-weight: bold; color: red;">
+<p class="warning">
 WARNING: These are auto-built packages, based on current development trees.<br/>
 Made only for testing purposes, you should not use them in production environments!
 </p>
 
-<p style="font-size: 0.8em;"><code>
-zypper ar http://packages.icinga.com/openSUSE/ICINGA-snapshot.repo<br/>
+<pre>
+zypper ar https://packages.icinga.com/openSUSE/ICINGA-snapshot.repo
 zypper ref
-</code></p>
-</p>
-</div>
+</pre>

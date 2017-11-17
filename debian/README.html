@@ -1,51 +1,51 @@
-<div id="readme">
-<h1><a href="http://www.debian.org"><img src="../res/debian-logo.png"></a> Debian</h1>
+<h1><a href="http://www.debian.org"><img src="../res/debian-logo.png" style="max-height: 1.5em;"></a> Debian</h1>
 <h2>Archive Key</h2>
-<p style="font-size: 0.8em;"><code>
-wget -O - https://packages.icinga.com/icinga.key | apt-key add -<br/>
-# or<br/>
-curl https://packages.icinga.com/icinga.key | apt-key add -</code></p>
+<pre>
+wget -O - https://packages.icinga.com/icinga.key | apt-key add -
+# or
+curl https://packages.icinga.com/icinga.key | apt-key add -
+</pre>
 
 <h2>Debian Backports</h2>
 
-Please make sure to enable the <a href="http://backports.debian.org/Instructions/">Debian Backports</a> repository.
-Some of the packages in this repository depend on packages which are only available as part of the Debian Backports repository.
+<p>Some of the packages may require <a href="http://backports.debian.org/Instructions/">Debian Backports</a> repository.
+Make sure you enable it when you see dependecy problems.</p>
 
 <h2>Release Builds</h2>
 
 <p>
 <strong>icinga-stretch</strong>
 <a href="dists/icinga-stretch/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-stretch/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-stretch/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
-deb http://packages.icinga.com/debian icinga-stretch main<br/>
+<pre>
+deb http://packages.icinga.com/debian icinga-stretch main
 deb-src http://packages.icinga.com/debian icinga-stretch main
-</code></p>
+</pre>
 
 <p>
 <strong>icinga-jessie</strong>
 <a href="dists/icinga-jessie/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-jessie/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-jessie/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
-deb http://packages.icinga.com/debian icinga-jessie main<br/>
+<pre>
+deb http://packages.icinga.com/debian icinga-jessie main
 deb-src http://packages.icinga.com/debian icinga-jessie main
-</code></p>
+</pre>
 
 <p>
 <strong>icinga-wheezy</strong>
 <a href="dists/icinga-wheezy/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-wheezy/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-wheezy/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
-deb http://packages.icinga.com/debian icinga-wheezy main<br/>
+<pre>
+deb http://packages.icinga.com/debian icinga-wheezy main
 deb-src http://packages.icinga.com/debian icinga-wheezy main
-</code></p>
+</pre>
 
 <h2>Snapshot Builds</h2>
 
-<p style="font-weight: bold; color: red;">
+<p class="warning">
 These are snapshot builds which are not suitable for production use. If you're setting up a production system
 please use the release packages instead.
 </p>
@@ -53,30 +53,29 @@ please use the release packages instead.
 <p>
 <strong>icinga-stretch-snapshots</strong>
 <a href="dists/icinga-stretch-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-stretch-snapshots/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-stretch-snapshots/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
-deb http://packages.icinga.com/debian icinga-stretch-snapshots main<br/>
+<pre>
+deb http://packages.icinga.com/debian icinga-stretch-snapshots main
 deb-src http://packages.icinga.com/debian icinga-stretch-snapshots main
-</code></p>
+</pre>
 
 <p>
 <strong>icinga-jessie-snapshots</strong>
 <a href="dists/icinga-jessie-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-jessie-snapshots/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-jessie-snapshots/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
+<pre>
 deb http://packages.icinga.com/debian icinga-jessie-snapshots main<br/>
 deb-src http://packages.icinga.com/debian icinga-jessie-snapshots main
-</code></p>
+</pre>
 
 <p>
 <strong>icinga-wheezy-snapshots</strong>
 <a href="dists/icinga-wheezy-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-wheezy-snapshots/main/binary-amd64/Packages">amd64</a><br/>
+<a href="dists/icinga-wheezy-snapshots/main/binary-amd64/Packages">amd64</a>
 </p>
-<p style="font-size: 0.8em;"><code>
-deb http://packages.icinga.com/debian icinga-wheezy-snapshots main<br/>
+<pre>
+deb http://packages.icinga.com/debian icinga-wheezy-snapshots main
 deb-src http://packages.icinga.com/debian icinga-wheezy-snapshots main
-</code></p>
-</div>
+</pre>

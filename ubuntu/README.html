@@ -1,63 +1,70 @@
-<div id="readme">
-<h1><a href="http://www.ubuntu.com"><img src="../res/ubuntu-logo.png"></a> Ubuntu</h1>
+<h1><a href="https://www.ubuntu.com"><img src="../res/ubuntu-logo.png" style="max-height: 1.5em;"></a> Ubuntu</h1>
 <h2>Archive Key</h2>
-<p style="font-size: 0.8em;"><code>
-wget -O - http://packages.icinga.com/icinga.key | apt-key add -</code></p>
-</p>
+<pre>
+wget -O - https://packages.icinga.com/icinga.key | apt-key add -
+# or
+curl https://packages.icinga.com/icinga.key | apt-key add -
+</pre>
 
 <h2>Release Builds</h2>
 
 <p><strong>icinga-zesty</strong>
 <a href="dists/icinga-zesty/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-zesty/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-zesty main<br/>
+<a href="dists/icinga-zesty/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-zesty main
 deb-src http://packages.icinga.com/ubuntu icinga-zesty main
-</code></p>
+</pre>
 
 <p><strong>icinga-xenial</strong>
 <a href="dists/icinga-xenial/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-xenial/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-xenial main<br/>
+<a href="dists/icinga-xenial/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-xenial main
 deb-src http://packages.icinga.com/ubuntu icinga-xenial main
-</code></p>
+</pre>
 
 <p><strong>icinga-trusty</strong>
 <a href="dists/icinga-trusty/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-trusty/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-trusty main<br/>
+<a href="dists/icinga-trusty/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-trusty main
 deb-src http://packages.icinga.com/ubuntu icinga-trusty main
-</code></p>
+</pre>
 
 <h2>Snapshot Builds</h2>
 
-<p style="font-weight: bold; color: red;">
+<p class="warning">
 These are snapshot builds which are not suitable for production use. If you're setting up a production system
 please use the release packages instead.
 </p>
 
 <p><strong>icinga-zesty-snapshots</strong>
 <a href="dists/icinga-zesty-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-zesty-snapshots/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-zesty-snapshots main<br/>
+<a href="dists/icinga-zesty-snapshots/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-zesty-snapshots main
 deb-src http://packages.icinga.com/ubuntu icinga-zesty-snapshots main
-</code></p>
+</pre>
 
 <p><strong>icinga-xenial-snapshots</strong>
 <a href="dists/icinga-xenial-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-xenial-snapshots/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-xenial-snapshots main<br/>
+<a href="dists/icinga-xenial-snapshots/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-xenial-snapshots main
 deb-src http://packages.icinga.com/ubuntu icinga-xenial-snapshots main
-</code></p>
+</pre>
 
 <p><strong>icinga-trusty-snapshots</strong>
 <a href="dists/icinga-trusty-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-trusty-snapshots/main/binary-amd64/Packages">amd64</a><br/>
-<code style="font-size: 0.9em;">
-deb http://packages.icinga.com/ubuntu icinga-trusty-snapshots main<br/>
+<a href="dists/icinga-trusty-snapshots/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-trusty-snapshots main
 deb-src http://packages.icinga.com/ubuntu icinga-trusty-snapshots main
-</code></p>
+</pre>
