@@ -35,7 +35,7 @@ to latest version on this platform. Consider updating your OS release.
 | Ubuntu   | 16.04 xenial | *latest* | *latest* | 7.0 [[16]] | 2021-03 [[3]] |
 | Ubuntu   | 17.04 zesty  | *latest* | *latest* | 7.0 [[16]] | 2017-12 [[3]] |
 | Ubuntu   | 17.10 artful | *latest* | *latest* | 7.1 [[17]] | 2018-06 [[3]] |
-| Fedora   | 25           | *latest* | *latest* | 7.0 [[18]] | 1m after 27 [[6]] |
+| Fedora   | 25           | *latest* | *latest* | 7.0 [[18]] | 2017-12 [[6]] |
 | Fedora   | 26           | *latest* | *latest* | 7.1 [[19]] | 1m after 28 [[6]] |
 | SUSE SLE | 11.4         | *latest* | 2.4.2    | 5.2 [[20]] | 2019-03 [[4]] |
 | SUSE SLE | 12.2         | *latest* | *latest* | 7.0/5.5 * [[22]] | 2018-03 [[4]] |
