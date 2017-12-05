@@ -37,6 +37,7 @@ to latest version on this platform. Consider updating your OS release.
 | Ubuntu   | 17.10 artful | *latest* | *latest* | 7.1 [[17]] | 2018-06 [[3]] |
 | Fedora   | 25           | *latest* | *latest* | 7.0 [[18]] | 2017-12 [[6]] |
 | Fedora   | 26           | *latest* | *latest* | 7.1 [[19]] | 1m after 28 [[6]] |
+| Fedora   | 27           | *latest* | *latest* | 7.1 [[19]] | 1m after 29 [[6]] |
 | SUSE SLE | 11.4         | *latest* | 2.4.2    | 5.2 [[20]] | 2019-03 [[4]] |
 | SUSE SLE | 12.2         | *latest* | *latest* | 7.0/5.5 * [[22]] | 2018-03 [[4]] |
 | SUSE SLE | 12.3         | *latest* | *latest* | 7.0/5.5 * [[22]] | TDB [[4]]     |
@@ -64,12 +65,6 @@ available version for that release from the table below.
 | Ubuntu   | 16.10 yakkety| 2.7.1    | 2.4.2        | 2017-06 [[3]] |
 | openSUSE | 13.2         | 2.6.3    | 2.4.1        | 2017-01 [[5]] |
 | openSUSE | 42.1         | 2.6.3    | 2.4.1        | 2017-05 [[5]] |
-
-### Upcoming Releases
-
-| OS       | Version      | Icinga 2 | Icinga Web 2 | OS Support        |
-|----------|--------------|----------|--------------|-------------------|
-| Fedora   | 27           | TODO     | TODO         | 1m after 29 [[6]] |
 
 ## Windows Support
 
