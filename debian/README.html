@@ -43,6 +43,16 @@ deb http://packages.icinga.com/debian icinga-wheezy main
 deb-src http://packages.icinga.com/debian icinga-wheezy main
 </pre>
 
+<p> Or if you are a lazy one:</p>
+
+<pre>
+DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
+ echo "deb http://packages.icinga.com/debian icinga-${DIST} main" > \
+ /etc/apt/sources.list.d/${DIST}-icinga.list
+ echo "deb-src http://packages.icinga.com/debian icinga-${DIST} main" >> \
+ /etc/apt/sources.list.d/${DIST}-icinga.list
+</pre>
+
 <h2>Snapshot Builds</h2>
 
 <p class="warning">
@@ -78,4 +88,14 @@ deb-src http://packages.icinga.com/debian icinga-jessie-snapshots main
 <pre>
 deb http://packages.icinga.com/debian icinga-wheezy-snapshots main
 deb-src http://packages.icinga.com/debian icinga-wheezy-snapshots main
+</pre>
+
+<p> Or if you are a lazy one:</p>
+
+<pre>
+DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
+ echo "deb http://packages.icinga.com/debian icinga-${DIST}-snapshots main" > \
+ /etc/apt/sources.list.d/${DIST}-icinga-snapshots.list
+ echo "deb-src http://packages.icinga.com/debian icinga-${DIST}-snapshots main" >> \
+ /etc/apt/sources.list.d/${DIST}-icinga-snapshots.list
 </pre>
