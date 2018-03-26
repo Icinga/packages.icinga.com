@@ -33,9 +33,7 @@ to latest version on this platform. Consider updating your OS release.
 | Debian   | 9 stretch    | *latest* | *latest* | 7.0 [[14]] | 2022-06 [[2]] |
 | Ubuntu   | 14.04 trusty | *latest* | 2.4.2    | 5.5 [[15]] | 2019-06 [[3]] |
 | Ubuntu   | 16.04 xenial | *latest* | *latest* | 7.0 [[16]] | 2021-03 [[3]] |
-| Ubuntu   | 17.04 zesty  | *latest* | *latest* | 7.0 [[16]] | 2017-12 [[3]] |
 | Ubuntu   | 17.10 artful | *latest* | *latest* | 7.1 [[17]] | 2018-06 [[3]] |
-| Fedora   | 25           | *latest* | *latest* | 7.0 [[18]] | 2017-12 [[6]] |
 | Fedora   | 26           | *latest* | *latest* | 7.1 [[19]] | 1m after 28 [[6]] |
 | Fedora   | 27           | *latest* | *latest* | 7.1 [[19]] | 1m after 29 [[6]] |
 | SUSE SLE | 11.4         | *latest* | 2.4.2    | 5.2 [[20]] | 2019-03 [[4]] |
@@ -63,6 +61,8 @@ available version for that release from the table below.
 | Ubuntu   | 15.04 vivid  | 2.4.1    | 2.3.4        | 2016-01 [[3]] |
 | Ubuntu   | 15.10 wily   | 2.4.10   | 2.3.4        | 2016-06 [[3]] |
 | Ubuntu   | 16.10 yakkety| 2.7.1    | 2.4.2        | 2017-06 [[3]] |
+| Ubuntu   | 17.04 zesty  | 2.5.1    | 2.8.1        | 2017-12 [[3]] |
+| Fedora   | 25           | 2.5.0    | 2.8.0        | 2017-12 [[6]] |
 | openSUSE | 13.2         | 2.6.3    | 2.4.1        | 2017-01 [[5]] |
 | openSUSE | 42.1         | 2.6.3    | 2.4.1        | 2017-05 [[5]] |
 
@@ -105,9 +105,7 @@ Other problems regarding the products can be reported on GitHub as well:
 [13]: https://tracker.debian.org/pkg/php5
 [14]: https://tracker.debian.org/pkg/php7.0
 [15]: https://launchpad.net/ubuntu/+source/php5
-[16]: https://launchpad.net/ubuntu/+source/php7.0
 [17]: https://launchpad.net/ubuntu/+source/php7.1
-[18]: https://mirrors.n-ix.net/fedora/linux/releases/25/Server/source/tree/Packages/p/
 [19]: https://mirrors.n-ix.net/fedora/linux/releases/26/Server/source/tree/Packages/p/
 [20]: https://www.suse.com/LinuxPackages/packageRouter.jsp?product=server&version=11&service_pack=sp2&architecture=x86_64&package_name=php5
 [21]: https://software.opensuse.org/package/php7
