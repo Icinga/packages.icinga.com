@@ -34,6 +34,7 @@ to latest version on this platform. Consider updating your OS release.
 | Ubuntu   | 14.04 trusty | *latest* | 2.4.2    | 5.5 [[15]] | 2019-06 [[3]] |
 | Ubuntu   | 16.04 xenial | *latest* | *latest* | 7.0 [[16]] | 2021-03 [[3]] |
 | Ubuntu   | 17.10 artful | *latest* | *latest* | 7.1 [[17]] | 2018-06 [[3]] |
+| Ubuntu   | 18.04 bionic | *latest* | *latest* | 7.2 [[18]] | 2018-06 [[3]] |
 | Fedora   | 26           | *latest* | *latest* | 7.1 [[19]] | 1m after 28 [[6]] |
 | Fedora   | 27           | *latest* | *latest* | 7.1 [[19]] | 1m after 29 [[6]] |
 | SUSE SLE | 11.4         | *latest* | 2.4.2    | 5.2 [[20]] | 2019-03 [[4]] |
@@ -105,7 +106,9 @@ Other problems regarding the products can be reported on GitHub as well:
 [13]: https://tracker.debian.org/pkg/php5
 [14]: https://tracker.debian.org/pkg/php7.0
 [15]: https://launchpad.net/ubuntu/+source/php5
+[16]: https://launchpad.net/ubuntu/+source/php7.0
 [17]: https://launchpad.net/ubuntu/+source/php7.1
+[18]: https://launchpad.net/ubuntu/+source/php7.2
 [19]: https://mirrors.n-ix.net/fedora/linux/releases/26/Server/source/tree/Packages/p/
 [20]: https://www.suse.com/LinuxPackages/packageRouter.jsp?product=server&version=11&service_pack=sp2&architecture=x86_64&package_name=php5
 [21]: https://software.opensuse.org/package/php7
