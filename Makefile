@@ -7,7 +7,7 @@ FOOTER := "</div>"
 README.html: README.md Makefile
 	@echo "WARNING: This uses api.github.com to render markdown!!" >&2
 	unix2dos -n README.md README.tmp.md
-	curl -vsS \
+	curl -sS \
 	  --header "Accept: application/vnd.github.v3+json" \
 	  --header "Content-Type: text/plain" \
 	  --data-binary "@README.tmp.md" \

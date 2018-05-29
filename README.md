@@ -37,8 +37,7 @@ to latest version on this platform. Consider updating your OS release.
 | Fedora   | 26           | *latest* | *latest* | 7.1 [[19]] | 1m after 28 [[6]] |
 | Fedora   | 27           | *latest* | *latest* | 7.1 [[19]] | 1m after 29 [[6]] |
 | SUSE SLE | 11.4         | *latest* | 2.4.2    | 5.2 [[20]] | 2019-03 [[4]] |
-| SUSE SLE | 12.2         | 2.8.2    | *latest* | 7.0/5.5 * [[22]] | 2018-03 [[4]] |
-| SUSE SLE | 12.3         | *latest* | *latest* | 7.0/5.5 * [[22]] | TBD [[4]]     |
+| SUSE SLE | 12.3         | *latest* | *latest* | 7.0/5.5 * [[22]] | 6 months after 12.4 [[4]] |
 | openSUSE | 42.2         | *latest* | *latest* | 7.0/5.5 [[21]] | 2018-01 [[5]] |
 | openSUSE | 42.3         | *latest* | *latest* | 7.0/5.5 [[21]] | 2019-01 [[5]] |
 
@@ -65,6 +64,7 @@ available version for that release from the table below.
 | Fedora   | 25           | 2.5.0    | 2.8.0        | 2017-12 [[6]] |
 | openSUSE | 13.2         | 2.6.3    | 2.4.1        | 2017-01 [[5]] |
 | openSUSE | 42.1         | 2.6.3    | 2.4.1        | 2017-05 [[5]] |
+| SUSE SLE | 12.2         | 2.8.2    | 2.5.1        | 2018-03 [[4]] |
 
 ## Windows Support
 
