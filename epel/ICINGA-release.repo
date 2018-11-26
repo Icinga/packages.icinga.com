@@ -3,4 +3,4 @@ name=ICINGA (stable release for epel)
 baseurl=http://packages.icinga.com/epel/$releasever/release/
 enabled=1
 gpgcheck=1
-gpgkey=http://packages.icinga.com/icinga.key
+gpgkey=https://packages.icinga.com/icinga.key
