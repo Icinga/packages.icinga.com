@@ -1,0 +1,76 @@
+<h1><a href="https://www.raspbian.org"><img src="../res/raspbian-logo.png" style="max-height: 1.5em;"></a> Raspbian for Raspberry Pi</h1>
+<h2>Archive Key</h2>
+<pre>
+wget -O - https://packages.icinga.com/icinga.key | apt-key add -
+# or
+curl https://packages.icinga.com/icinga.key | apt-key add -
+</pre>
+
+<h2>Release Builds</h2>
+
+<p>
+<strong>icinga-stretch</strong>
+<a href="dists/icinga-stretch/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-stretch/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-stretch main
+deb-src http://packages.icinga.com/raspbian icinga-stretch main
+</pre>
+
+<p>
+<strong>icinga-jessie</strong>
+<a href="dists/icinga-jessie/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-jessie/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-jessie main
+deb-src http://packages.icinga.com/raspbian icinga-jessie main
+</pre>
+
+<p>Or if you are a lazy one:</p>
+
+<pre>
+DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
+ echo "deb http://packages.icinga.com/raspbian icinga-${DIST} main" > \
+ /etc/apt/sources.list.d/icinga.list
+ echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST} main" >> \
+ /etc/apt/sources.list.d/icinga.list
+</pre>
+
+<h2>Snapshot Builds</h2>
+
+<p class="warning">
+These are snapshot builds which are not suitable for production use. If you're setting up a production system
+please use the release packages instead.
+</p>
+
+<p>
+<strong>icinga-stretch-snapshots</strong>
+<a href="dists/icinga-stretch-snapshots/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-stretch-snapshots/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-stretch-snapshots main
+deb-src http://packages.icinga.com/raspbian icinga-stretch-snapshots main
+</pre>
+
+<p>
+<strong>icinga-jessie-snapshots</strong>
+<a href="dists/icinga-jessie-snapshots/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-jessie-snapshots/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-jessie-snapshots main<br/>
+deb-src http://packages.icinga.com/raspbian icinga-jessie-snapshots main
+</pre>
+
+<p>Or if you are a lazy one:</p>
+
+<pre>
+DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
+ echo "deb http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" > \
+ /etc/apt/sources.list.d/icinga-snapshots.list
+ echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" >> \
+ /etc/apt/sources.list.d/icinga-snapshots.list
+</pre>
