@@ -10,8 +10,7 @@ curl https://packages.icinga.com/icinga.key | apt-key add -
 
 <p>
 <strong>icinga-stretch</strong>
-<a href="dists/icinga-stretch/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-stretch/main/binary-amd64/Packages">amd64</a>
+<a href="dists/icinga-stretch/main/binary-armhf/Packages">armhf</a>
 </p>
 <pre>
 deb http://packages.icinga.com/raspbian icinga-stretch main
@@ -20,8 +19,7 @@ deb-src http://packages.icinga.com/raspbian icinga-stretch main
 
 <p>
 <strong>icinga-jessie</strong>
-<a href="dists/icinga-jessie/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-jessie/main/binary-amd64/Packages">amd64</a>
+<a href="dists/icinga-jessie/main/binary-armhf/Packages">armhf</a>
 </p>
 <pre>
 deb http://packages.icinga.com/raspbian icinga-jessie main
@@ -32,9 +30,9 @@ deb-src http://packages.icinga.com/raspbian icinga-jessie main
 
 <pre>
 DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
- echo "deb http://packages.icinga.com/raspbian icinga-${DIST} main" > \
+ echo "deb http://packages.icinga.com/raspbian icinga-${DIST} main" &gt; \
  /etc/apt/sources.list.d/icinga.list
- echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST} main" >> \
+ echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST} main" &gt;&gt; \
  /etc/apt/sources.list.d/icinga.list
 </pre>
 
@@ -47,8 +45,7 @@ please use the release packages instead.
 
 <p>
 <strong>icinga-stretch-snapshots</strong>
-<a href="dists/icinga-stretch-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-stretch-snapshots/main/binary-amd64/Packages">amd64</a>
+<a href="dists/icinga-stretch-snapshots/main/binary-armhf/Packages">armhf</a>
 </p>
 <pre>
 deb http://packages.icinga.com/raspbian icinga-stretch-snapshots main
@@ -57,8 +54,7 @@ deb-src http://packages.icinga.com/raspbian icinga-stretch-snapshots main
 
 <p>
 <strong>icinga-jessie-snapshots</strong>
-<a href="dists/icinga-jessie-snapshots/main/binary-i386/Packages">i386</a>
-<a href="dists/icinga-jessie-snapshots/main/binary-amd64/Packages">amd64</a>
+<a href="dists/icinga-jessie-snapshots/main/binary-armhf/Packages">armhf</a>
 </p>
 <pre>
 deb http://packages.icinga.com/raspbian icinga-jessie-snapshots main<br/>
@@ -69,8 +65,8 @@ deb-src http://packages.icinga.com/raspbian icinga-jessie-snapshots main
 
 <pre>
 DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
- echo "deb http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" > \
+ echo "deb http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" &gt; \
  /etc/apt/sources.list.d/icinga-snapshots.list
- echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" >> \
+ echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST}-snapshots main" &gt;&gt; \
  /etc/apt/sources.list.d/icinga-snapshots.list
 </pre>
