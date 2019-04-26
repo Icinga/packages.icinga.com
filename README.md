@@ -12,7 +12,7 @@ and package setup instructions:
 
 ## Supported Platforms
 
-The officially supported platforms are compiled on [icinga.com/support](https://www.icinga.com/support/).
+The officially supported platforms are compiled on [icinga.com](https://icinga.com/support/support-details/).
 
 ## Contributing
 
