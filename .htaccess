@@ -2,7 +2,7 @@ Options +Indexes
 IndexStyleSheet "/res/style.css?20171117"
 
 # yes some hidden content :D
-IndexIgnore HEADER.html README.html style.css res favicon.ico sles_dvds stack graphite Makefile
+IndexIgnore HEADER.html README.html style.css res favicon.ico sles_dvds stack graphite Makefile customer
 IndexOptions FancyIndexing VersionSort HTMLTable NameWidth=* Charset=UTF-8 SuppressDescription FoldersFirst
 IndexHeadInsert "<link href=\"https://fonts.googleapis.com/css?family=Open+Sans\" rel=\"stylesheet\">"
 HeaderName /HEADER.html

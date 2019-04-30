@@ -6,6 +6,8 @@
 /graphite/
 /*/*/
 /windows
+/customer
+/stack
 
 ## Temporary files
 *.tmp.html
