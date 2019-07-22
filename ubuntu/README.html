@@ -30,9 +30,9 @@ deb-src http://packages.icinga.com/ubuntu icinga-xenial main
 
 <pre>
 . /etc/os-release; if [ ! -z ${UBUNTU_CODENAME+x} ]; then DIST="${UBUNTU_CODENAME}"; else DIST="$(lsb_release -c| awk '{print $2}')"; fi; \
- echo "deb http://packages.icinga.com/ubuntu icinga-${DIST} main" > \
+ echo "deb http://packages.icinga.com/ubuntu icinga-${DIST} main" &gt; \
  /etc/apt/sources.list.d/${DIST}-icinga.list
- echo "deb-src http://packages.icinga.com/ubuntu icinga-${DIST} main" >> \
+ echo "deb-src http://packages.icinga.com/ubuntu icinga-${DIST} main" &gt;&gt; \
  /etc/apt/sources.list.d/${DIST}-icinga.list
 </pre>
 
@@ -65,8 +65,8 @@ deb-src http://packages.icinga.com/ubuntu icinga-xenial-snapshots main
 
 <pre>
 . /etc/os-release; if [ ! -z ${UBUNTU_CODENAME+x} ]; then DIST="${UBUNTU_CODENAME}"; else DIST="$(lsb_release -c| awk '{print $2}')"; fi; \
- echo "deb http://packages.icinga.com/ubuntu icinga-${DIST}-snapshots main" > \
+ echo "deb http://packages.icinga.com/ubuntu icinga-${DIST}-snapshots main" &gt; \
  /etc/apt/sources.list.d/${DIST}-icinga-snapshots.list
- echo "deb-src http://packages.icinga.com/ubuntu icinga-${DIST}-snapshots main" >> \
+ echo "deb-src http://packages.icinga.com/ubuntu icinga-${DIST}-snapshots main" &gt;&gt; \
  /etc/apt/sources.list.d/${DIST}-icinga-snapshots.list
 </pre>
