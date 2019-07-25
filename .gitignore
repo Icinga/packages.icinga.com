@@ -5,7 +5,8 @@
 ## Non-included
 /graphite/
 /*/*/
-/windows
+/windows/*
+!/windows/.htaccess
 /customer
 /stack
 
