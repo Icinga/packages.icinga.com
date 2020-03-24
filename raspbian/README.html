@@ -36,6 +36,41 @@ DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
  /etc/apt/sources.list.d/icinga.list
 </pre>
 
+<h2>Testing (Pre Release) Builds</h2>
+
+<p class="warning">
+These are pre release builds which are not recommended for production use. If you're setting up a production system
+please use the release packages instead.
+</p>
+
+<p>
+<strong>icinga-buster-testing</strong>
+<a href="dists/icinga-buster-testing/main/binary-armhf/Packages">armhf</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-buster-testing main
+deb-src http://packages.icinga.com/raspbian icinga-buster-testing main
+</pre>
+
+<p>
+<strong>icinga-stretch-testing</strong>
+<a href="dists/icinga-stretch-testing/main/binary-armhf/Packages">armhf</a>
+</p>
+<pre>
+deb http://packages.icinga.com/raspbian icinga-stretch-testing main
+deb-src http://packages.icinga.com/raspbian icinga-stretch-testing main
+</pre>
+
+<p>Or if you are a lazy one:</p>
+
+<pre>
+DIST=$(awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release); \
+ echo "deb http://packages.icinga.com/raspbian icinga-${DIST}-testing main" &gt; \
+ /etc/apt/sources.list.d/icinga-testing.list
+ echo "deb-src http://packages.icinga.com/raspbian icinga-${DIST}-testing main" &gt;&gt; \
+ /etc/apt/sources.list.d/icinga-testing.list
+</pre>
+
 <h2>Snapshot Builds</h2>
 
 <p class="warning">

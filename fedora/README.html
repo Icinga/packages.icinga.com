@@ -13,6 +13,19 @@ dnf install https://packages.icinga.com/fedora/icinga-rpm-release-30-latest.noar
 </pre>
 </p>
 
+<h2>Testing (Pre Release) Builds</h2>
+
+<p class="warning">
+WARNING: These are pre release builds which are not recommended for production use. If you're setting up a production system
+please use the release packages instead.
+</p>
+
+<pre>
+rpm --import https://packages.icinga.com/icinga.key<br/>
+wget https://packages.icinga.com/fedora/ICINGA-testing.repo -O /etc/yum.repos.d/ICINGA-testing.repo<br/>
+</pre>
+</p>
+
 <h2>Snapshot Builds</h2>
 
 <p class="warning">

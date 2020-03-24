@@ -33,6 +33,17 @@ dnf install https://packages.icinga.com/epel/icinga-rpm-release-8-latest.noarch.
 yum install https://packages.icinga.com/epel/icinga-rpm-release-7-latest.noarch.rpm
 yum install https://packages.icinga.com/epel/icinga-rpm-release-6-latest.noarch.rpm</pre>
 
+<h2>Testing (Pre Release) Builds</h2>
+
+<p class="warning">
+WARNING: These are pre release builds which are not recommended for production use. If you're setting up a production system
+please use the release packages instead.
+</p>
+
+<pre>rpm --import https://packages.icinga.com/icinga.key
+
+wget https://packages.icinga.com/epel/ICINGA-testing.repo -O /etc/yum.repos.d/ICINGA-testing.repo</pre>
+
 <h2>Snapshot Builds</h2>
 
 <p class="warning">

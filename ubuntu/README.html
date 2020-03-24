@@ -36,6 +36,41 @@ deb-src http://packages.icinga.com/ubuntu icinga-xenial main
  /etc/apt/sources.list.d/${DIST}-icinga.list
 </pre>
 
+<h2>Testing (Pre Release) Builds</h2>
+
+<p class="warning">
+These are pre release builds which are not recommended for production use. If you're setting up a production system
+please use the release packages instead.
+</p>
+
+<p><strong>icinga-bionic-testing</strong>
+<a href="dists/icinga-bionic-testing/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-bionic-testing/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-bionic-testing main
+deb-src http://packages.icinga.com/ubuntu icinga-bionic-testing main
+</pre>
+
+<p><strong>icinga-xenial-testing</strong>
+<a href="dists/icinga-xenial-testing/main/binary-i386/Packages">i386</a>
+<a href="dists/icinga-xenial-testing/main/binary-amd64/Packages">amd64</a>
+</p>
+<pre>
+deb http://packages.icinga.com/ubuntu icinga-xenial-testing main
+deb-src http://packages.icinga.com/ubuntu icinga-xenial-testing main
+</pre>
+
+<p> Or if you are a lazy one:</p>
+
+<pre>
+. /etc/os-release; if [ ! -z ${UBUNTU_CODENAME+x} ]; then DIST="${UBUNTU_CODENAME}"; else DIST="$(lsb_release -c| awk '{print $2}')"; fi; \
+ echo "deb http://packages.icinga.com/ubuntu icinga-${DIST}-testing main" &gt; \
+ /etc/apt/sources.list.d/${DIST}-icinga-testing.list
+ echo "deb-src http://packages.icinga.com/ubuntu icinga-${DIST}-testing main" &gt;&gt; \
+ /etc/apt/sources.list.d/${DIST}-icinga-testing.list
+</pre>
+
 <h2>Snapshot Builds</h2>
 
 <p class="warning">
